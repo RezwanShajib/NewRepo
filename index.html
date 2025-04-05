@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Fetch API</title>
+    </head>
+
+    <body>
+        <div class="heading"><h1>Currency Converter</h1></div>
+        <div align="center">
+            <form>
+                <div class="converter">
+                    <div class="inputs">
+                        <div class="input-box" id="amount-box">
+                            <label>Amount</label><br>
+                            <input type="number" name="amount" value="1" class="input-select" id="amount">
+                        </div>
+                        
+                        <div class="dropdown">
+                            <div class="input-box" id="from-box">
+                                <label>From</label><br>
+                                <!-- <img class="flag" src="https://flagsapi.com/US/flat/32.png"> -->
+                                <select name="from" class="input-select" id="from">
+                                    <option value="USD" selected>USD - US Dollar</option>
+                                    <option value="CAD">CAD - Canadian Dollar</option>
+                                    <option value="AUD">AUD - Australian Dollar</option>
+                                    <option value="NZD">NZD - New Zealand Dollar</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="INR">INR - Indian Rupee</option>
+                                    <option value="BDT">BDT - Bangladeshi Taka</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Swap Button -->
+                            <div class="swap-container">
+                                <button type="button" class="swap-btn" onclick="swapCurrencies()">&#8644;</button>
+                            </div>
+
+                            <div class="input-box" id="to-box">
+                                <label>To</label><br>
+                                <!-- <img class="flag" src="https://flagsapi.com/BD/flat/32.png"> -->
+                                <select name="to" class="input-select" id="to">
+                                    <option value="USD">USD - US Dollar</option>
+                                    <option value="CAD">CAD - Canadian Dollar</option>
+                                    <option value="AUD">AUD - Australian Dollar</option>
+                                    <option value="NZD">NZD - New Zealand Dollar</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="INR">INR - Indian Rupee</option>
+                                    <option value="BDT" selected>BDT - Bangladeshi Taka</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>            
+                    <!-- Message & Convert Button Inside the Red Box -->
+                    <div class="button-container">
+                        <div class="msg" id="msg"></div>
+                        <button class="convert-btn" id="convertBtn">Convert</button>
+                    </div>
+                </div>
+                
+            </form>
+    </div>
+
+
+
+        <!-- <button id="btn1">Click to Execute!</button>
+        <p id="demo1">AAA</p> -->
+        <script src="codes.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
